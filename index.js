@@ -21,7 +21,6 @@ function handleClick(target) {
           <td>${targeted}</td>
           `;
     count.appendChild(tr);
-
     const priceString = target.parentElement.children[3].innerText;
     const price = parseFloat(priceString);
     total = total + price;
@@ -38,6 +37,7 @@ function handleClick(target) {
     } else {
         purchaseBtn.setAttribute('disabled', true)
     }
+    return tr;
 }
 
 // discount apply button
