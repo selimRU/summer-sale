@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+
+    <!-- daisyUi & tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- font Awesome link -->
+    <script src="https://kit.fontawesome.com/32576525f7.js" crossorigin="anonymous"></script>
+    <title>Summer Sale Assignment-5</title>
+
+    <!-- styles part -->
+    <style>
+        .sale-fev {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-color': '#F9F6E2',
+                        'bg-color2': '#1111110D',
+                        'sell': '#E527B2',
+                        'text': '#FFF',
+                        'text2': '#111',
+                        'text3': '#11111180',
+                        'rattings': '#FFC107',
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- body part -->
+
+<body class="sale-fev" id="body">
+
+    <!-- header part -->
+    <header class="bg-bg-color">
+
+        <!-- banner section -->
+        <section class="container mx-auto">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center">
+
+                <!-- banner title part -->
+                <div class=" w-full md:w-full lg:w-[50%] text-center space-y-4 md:space-y-5 lg:space-y-8">
+                    <h4 class=" text-base font-semibold text-text2">---SALE FEVER---</h4>
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-text2">Purchase TK 200 or
+                        <br> above & get <span class="text-sell">20% off</span>
+                    </h2>
+                    <div class="flex flex-row gap-2 justify-center items-center">
+                        <p class="text-sm font-semibold text-text2">Use Promo Code</p>
+                        <h4 id="sell200" class="bg-sell px-1 md:px-1 lg:px-3 py-1 rounded-md text-text">SELL200</h4>
+                    </div>
+                </div>
+
+                <!-- banner image -->
+                <div class="w-full md:w-full lg:w-[50%]">
+                    <img class="lg:w-4/5" src="./images/Summer 1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- main part -->
+    <main>
+        <section class="bg-bg-color2 pb-1 pt-12">
+            <div
+                class="flex flex-col md:flex-row lg:flex-row gap-3 md:gap-10 justify-center mb-10 lg:gap-5 rounded-md px-5 md:px-5 lg:px-20">
+                <div class="">
+                    <div>
+                        <!-- Kitchenware part -->
+                        <div>
+                            <h4 class="mb-4 text-text2 text-3xl font-extrabold mt-10">Kitchenware</h4>
+                            <div
+                                class="grid md:grid-cols-1 lg:grid-cols-3 justify-around content-center items-center gap-5 rounded-md md:gap-5 lg:gap-5 ">
+
+                                <!-- Kitchenware product one -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod1.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">K. Accessories</h2>
+                                    <p class=" text-text3">39.00 TK</p>
+                                </div>
+
+                                <!-- Kitchenware product two -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod2.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">K. Accessories</h2>
+                                    <p class=" text-text3">25.00 TK</p>
+                                </div>
+
+                                <!-- Kitchenware product three -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod3.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Home Cooker</h2>
+                                    <p class=" text-text3">49.00 TK</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sportswear part -->
+                        <div>
+                            <h4 class="mb-4 text-text2 text-3xl font-extrabold mt-10">Sportswear</h4>
+                            <div
+                                class="grid md:grid-cols-1 lg:grid-cols-3 justify-around content-center items-center gap-5 rounded-md md:gap-5 lg:gap-5 ">
+
+                                <!-- Sportswear product one -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod4.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Sports Back Cap</h2>
+                                    <p class=" text-text3">49.00 TK</p>
+                                </div>
+
+                                <!-- Sportswear product two -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod5.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Full Jersey Set</h2>
+                                    <p class=" text-text3">69.00 TK</p>
+                                </div>
+
+                                <!-- Sportswear product three -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod6.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Sports cates</h2>
+                                    <p class=" text-text3">159.00 TK</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Furniture part -->
+                        <div>
+                            <h4 class=" mb-4 text-text2 text-3xl font-extrabold mt-10">Furniture</h4>
+                            <div
+                                class="grid md:grid-cols-1 lg:grid-cols-3 justify-around content-center items-center gap-5  md:gap-5 rounded-md lg:gap-5">
+
+                                <!-- Furniture product one -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod7.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-regular fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Single Relax Chair</h2>
+                                    <p class=" text-text3">155.00 TK</p>
+                                </div>
+
+                                <!-- Furniture product two -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod8.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Children play</h2>
+                                    <p class=" text-text3">299.00 TK</p>
+                                </div>
+
+                                <!-- Furniture product three -->
+                                <div
+                                    class="targeted bg-text space-y-2 flex flex-col justify-center p-5 rounded-md items-center">
+                                    <img onclick="handleClick(this)" src="./images/prod9.png"
+                                        class="bg-bg-color2 px-20 py-5 rounded-md" />
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                        <i class="fa-solid fa-star text-rattings"></i>
+                                    </div>
+                                    <h2 class="font-extrabold text-text2">Flexible Sofa</h2>
+                                    <p class=" text-text3">339.00 TK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center md:text-start lg:text-start gap-3 md:mt-[93px] lg:mt-[93px]">
+
+                    <!-- coupon input & apply button part -->
+                    <div class="bg-text py-10 px-5 rounded-md">
+                        <div>
+                            <h4 class="text-text2 py-1 font-semibold">Have coupon?</h4>
+                        </div>
+                        <div class="relative">
+                            <input id="coupon-input" class="border outline-none px-[2px] py-[11px] rounded-md"
+                                type="text" placeholder="Coupon code">
+                            <button id="apply"
+                                class="btn absolute capitalize -ml-[24%] md:-ml-[42%] lg:-ml-[41%] bg-sell px-5 rounded-sm text-text rounded-r-md"
+                                disabled>Apply</button>
+                        </div>
+                    </div>
+                    <div class="relative bg-text rounded-md">
+                        <div class=" px-5 space-y-6 pb-12">
+                            <div id="count" class="text-text2 font-extrabold"></div>
+
+                            <!-- products name container -->
+                            <div class=" bg-gray-300 h-[1px]"></div>
+
+                            <!-- price and discount part -->
+                            <div>
+                                <p class="text-text2 font-semibold">Total price : <span id="total-price"
+                                        class="text-text3"></span><span class="text-text3">Tk</span></p>
+                                <p class="text-text2 font-semibold">Discount : <span id="discount"
+                                        class="text-text3"></span><span class="text-text3">Tk</span></p>
+                                <p class="text-text2 font-semibold">Total : <span id="total"
+                                        class="text-text3"></span><span class="text-text3">Tk</span>
+                                </p>
+                            </div>
+                            <div class=" bg-gray-300 h-[1px]"></div>
+                        </div>
+
+                        <!-- modal and purchase confirm button -->
+                        <button id="purchase"
+                            class="btn py-3 rounded-md px-10 absolute w-4/5 right-10 md:left-[24px] bg-sell text-text capitalize -mt-6"
+                            onclick="my_modal_5.showModal()" disabled>Make Purchase</button>
+                        <dialog id="my_modal_5"
+                            class="modal modal-bottom sm:modal-middle w-9/12 h-9/12 md:w-7/12 md:h-full -mt-8 md:-mt-3 mx-auto rounded-b-2xl ">
+                            <form method="dialog" class="modal-box">
+                                <img class="w-[20%] lg:w-[20%] md:w-[13%] flex mx-auto" src="./images/congo.png" alt="">
+                                <h3 class="text-base md:text-xl lg:text-3xl text-center font-extrabold">Congratulations
+                                </h3>
+                                <p class="py-4 text-center">Your Purchase the product</p>
+                                <div class="modal-action">
+
+                                    <!--modal close & go home button -->
+                                    <button class="btn bg-sell text-center text-text capitalize flex mx-auto"
+                                        onclick="goHomeAndClearCart()">Go Home</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./summer.js"></script>
+</body>
