@@ -62,6 +62,7 @@ function goHomeAndClearCart() {
     priceTotal.innerText = '';
     discount.innerText = '';
     finalTotal.innerText = '';
+    location.reload();
 
 }
 
